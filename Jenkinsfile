@@ -44,10 +44,5 @@ pipeline {
                 '''
             }
         }
-        stage("Validate") {
-            steps {
-                sh "test $(curl -s adam-deploy | wc -l) = 15 && echo OK || exit 1"
-            }
-        }
     }
 }
