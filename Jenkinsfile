@@ -46,7 +46,7 @@ pipeline {
         }
         stage("Validate") {
             steps {
-                sh "test $(curl -s adam-deploy | wc -l) = 15 && echo OK || exit 1"
+                sh "sh -c 'test $(curl -s adam-deploy | wc -l) = 15 && echo OK || exit 1'"
             }
         }
     }
