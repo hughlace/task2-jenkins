@@ -51,7 +51,6 @@ spec:
     rollingUpdate:
 
       maxSurge: 25%
-
       maxUnavailable: 25%
 
   template:
