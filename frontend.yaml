@@ -49,7 +49,6 @@ spec:
   strategy:
 
     rollingUpdate:
-
       maxSurge: 25%
       maxUnavailable: 25%
 
