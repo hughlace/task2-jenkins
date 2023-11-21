@@ -68,8 +68,12 @@ spec:
 
       - name: frontend
 
-        image: htrvolker/python-frontend:red
+        image: htrvolker/python-frontend:blue # this image will show a blue background instead of red
 
         ports:
 
         - containerPort: 5000
+
+Then, apply the change to the manifest:
+
+kubectl apply -f frontend.yaml
